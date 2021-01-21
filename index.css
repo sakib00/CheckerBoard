@@ -1,0 +1,71 @@
+body{
+    background-color: #f4f4f4;
+}
+
+.main-header {
+    padding: 15px;
+   
+}
+
+.main-header h1 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: #333;
+}
+
+.table {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    border: 4px solid #555;
+}
+
+.square {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.row:nth-child(odd) .square:nth-child(odd) {
+    background-image: url("white.jpg");
+}
+
+.row:nth-child(even) .square:nth-child(even) {
+    background-image: url("white.jpg");
+}
+.row:nth-child(odd) .square:nth-child(even) {
+    background-image: url("black.jpg");
+}
+
+.row:nth-child(even) .square:nth-child(odd) {
+    background-image: url("black.jpg");
+}
+
+.checker {
+    margin: auto;
+    margin-top: 11px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.white {
+    background-image: url("white_man.png");
+    background-size: 100%;
+}
+
+.black {
+    background-image: url("black_man.png");
+    background-size: 100%;
+}
+
+#game-over {
+    
+}
